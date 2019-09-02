@@ -14,6 +14,7 @@ app.set("view engine", "ejs");
 
 app.use("/contact", contactRouter);
 
-app.listen(3000, function() {
-    console.log("http://localhost:3000");
+var port = process.env.PORT || 3000;
+app.listen(port, function() {
+    console.log("http://localhost:port");
 });
