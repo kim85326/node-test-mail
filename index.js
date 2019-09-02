@@ -12,7 +12,7 @@ app.engine("ejs", engine);
 app.set("views", "./views");
 app.set("view engine", "ejs");
 
-app.use("/contact", contactRouter);
+app.use("/", contactRouter);
 
 var port = process.env.PORT || 3000;
 app.listen(port, function() {
